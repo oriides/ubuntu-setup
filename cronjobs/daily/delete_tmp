@@ -1,0 +1,2 @@
+#!/bin/bash
+find /home/nikolai/tmp/ -mindepth 1 -mtime +5 -delete

@@ -1,0 +1,2 @@
+#!/bin/bash
+find /home/nikolai/Downloads/ -mindepth 1 -mtime +30 -delete
