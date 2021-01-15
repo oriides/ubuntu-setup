@@ -47,6 +47,7 @@ sudo apt install -y scrcpy
 sudo apt install -y spotify-client
 sudo apt install -y stacer
 sudo apt install -y steam
+sudo apt install -y translate-shell
 sudo apt install -y units
 sudo apt install -y vim
 sudo apt install -y vim-gtk
