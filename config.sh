@@ -50,7 +50,9 @@ cp $(dirname $(readlink -f $0))/configs/.vimrc ~/
 
 # sets up PulseEffects Presets
 mkdir -p ~/.config/PulseEffects/output/
-cp $(dirname $(readlink -f $0))/PulseEffectsPresets/*.json ~/.config/PulseEffects/output/
+mkdir -p ~/.config/PulseEffects/input/
+cp $(dirname $(readlink -f $0))/configs/PulseEffects-input/*.json ~/.config/PulseEffects/input/
+cp $(dirname $(readlink -f $0))/configs/PulseEffects-output/*.json ~/.config/PulseEffects/output/
 
 # sets up cronjobs
 sudo cp $(dirname $(readlink -f $0))/cronjobs/daily/* /etc/cron.daily/

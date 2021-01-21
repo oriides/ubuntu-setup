@@ -175,7 +175,7 @@
                     "slope": "x1",
                     "solo": "false",
                     "mute": "false",
-                    "gain": "0",
+                    "gain": "-2",
                     "frequency": "1000",
                     "q": "4.3600000000000003"
                 },
@@ -277,7 +277,7 @@
                     "slope": "x1",
                     "solo": "false",
                     "mute": "false",
-                    "gain": "0",
+                    "gain": "-2",
                     "frequency": "1000",
                     "q": "4.3600000000000003"
                 },
