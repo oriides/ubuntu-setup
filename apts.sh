@@ -16,7 +16,6 @@ sudo apt install -y aptitude
 sudo apt install -y dconf-editor
 sudo apt install -y default-jdk
 sudo apt install -y evolution
-sudo apt install -y flatpak
 sudo apt install -y gimp
 sudo apt install -y git
 sudo apt install -y gnome-shell-extensions
