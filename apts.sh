@@ -19,7 +19,6 @@ sudo apt install -y evolution
 sudo apt install -y gimp
 sudo apt install -y git
 sudo apt install -y gnome-shell-extensions
-sudo apt install -y gnome-software-plugin-flatpak
 sudo apt install -y gnome-tweaks
 sudo apt install -y gparted
 sudo apt install -y handbrake
