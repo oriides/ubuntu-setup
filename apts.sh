@@ -49,6 +49,7 @@ sudo apt install -y steam
 sudo apt install -y texlive
 sudo apt install -y texlive-lang-german
 sudo apt install -y texlive-latex-extra
+sudo apt install -y texlive-extra-utils
 sudo apt install -y translate-shell
 sudo apt install -y units
 sudo apt install -y vim
