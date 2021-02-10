@@ -24,6 +24,7 @@ sudo apt install -y gparted
 sudo apt install -y handbrake
 sudo apt install -y inkscape
 sudo apt install -y lastpass-cli
+sudo apt install -y latexmk
 sudo apt install -y lutris
 sudo apt install -y maven
 sudo apt install -y mongodb
@@ -45,6 +46,9 @@ sudo apt install -y scrcpy
 sudo apt install -y spotify-client
 sudo apt install -y stacer
 sudo apt install -y steam
+sudo apt install -y texlive
+sudo apt install -y texlive-lang-german
+sudo apt install -y texlive-latex-extra
 sudo apt install -y translate-shell
 sudo apt install -y units
 sudo apt install -y vim
