@@ -35,28 +35,28 @@
             "equalizer",
             "deesser",
             "gate",
+            "compressor",
+            "reverb",
             "multiband_compressor",
             "limiter",
             "filter",
-            "compressor",
             "multiband_gate",
-            "reverb",
             "pitch",
             "stereo_tools",
             "maximizer"
         ],
         "compressor": {
-            "state": "false",
+            "state": "true",
             "input-gain": "0",
             "output-gain": "0",
             "mode": "Downward",
             "attack": "20",
             "release": "100",
             "release-threshold": "-200",
-            "threshold": "-12",
+            "threshold": "-18",
             "ratio": "4",
             "knee": "-6",
-            "makeup": "4",
+            "makeup": "0",
             "boost-threshold": "-72",
             "sidechain": {
                 "listen": "false",
@@ -92,7 +92,7 @@
             "mode": "IIR",
             "num-bands": "10",
             "input-gain": "0",
-            "output-gain": "4",
+            "output-gain": "0",
             "split-channels": "false",
             "left": {
                 "band0": {
@@ -313,13 +313,13 @@
             "detection": "RMS",
             "stereo-link": "Average",
             "range": "-24",
-            "attack": "20",
-            "release": "250",
+            "attack": "2",
+            "release": "200",
             "threshold": "-48",
             "ratio": "2",
             "knee": "9",
             "input": "0",
-            "makeup": "0"
+            "makeup": "3"
         },
         "limiter": {
             "state": "false",
@@ -351,17 +351,17 @@
             "faster": "false"
         },
         "reverb": {
-            "state": "false",
+            "state": "true",
             "input-gain": "0",
             "output-gain": "0",
-            "room-size": "Large\/smooth",
-            "decay-time": "1.5",
+            "room-size": "Small",
+            "decay-time": "0.40000000000000002",
             "hf-damp": "5000",
             "diffusion": "0.5",
-            "amount": "-12",
+            "amount": "-32",
             "dry": "0",
             "predelay": "0",
-            "bass-cut": "300",
+            "bass-cut": "100",
             "treble-cut": "5000"
         },
         "webrtc": {
