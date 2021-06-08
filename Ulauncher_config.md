@@ -15,3 +15,4 @@
 - [Process Murderer](https://ext.ulauncher.io/-/github-isacikgoz-ukill) `https://github.com/isacikgoz/ukill`
 - [Converter](https://ext.ulauncher.io/-/github-skykooler-ulauncher-conversion) `https://github.com/skykooler/ulauncher-conversion`
 - [Translate](https://ext.ulauncher.io/-/github-nastuzzisamy-ulauncher-translate) `https://github.com/NastuzziSamy/ulauncher-translate`
+- [openthesaurus.de](https://ext.ulauncher.io/-/github-behrensger-thesaurus_cc_ulauncher) `https://github.com/behrensger/thesaurus_cc_ulauncher`
