@@ -5,6 +5,7 @@ sudo apt install -y gnome-software-plugin-flatpak
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
+flatpak install -y com.bitwarden.desktop
 flatpak install -y org.blender.Blender
 flatpak install -y org.onlyoffice.desktopeditors
 flatpak install -y com.discordapp.Discord

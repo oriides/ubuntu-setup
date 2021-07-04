@@ -7,15 +7,17 @@ sudo add-apt-repository -y ppa:lutris-team/lutris
 sudo add-apt-repository -y 'deb https://repo.vivaldi.com/archive/deb/ stable main'
 sudo add-apt-repository -y ppa:mikhailnov/pulseeffects
 sudo add-apt-repository -y ppa:nextcloud-devs/client
+sudo add-apt-repository -y ppa:obsproject/obs-studio
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key FDC247B7
 echo 'deb https://repo.windscribe.com/ubuntu bionic main' | sudo tee /etc/apt/sources.list.d/windscribe-repo.list
 
 sudo apt update
 
-sudo apt install -y aptitude
+sudo apt install -y build-essential
 sudo apt install -y dconf-editor
 sudo apt install -y default-jdk
 sudo apt install -y evolution
+sudo apt install -y ffmpeg
 sudo apt install -y gimp
 sudo apt install -y git
 sudo apt install -y gnome-shell-extensions
@@ -23,7 +25,6 @@ sudo apt install -y gnome-tweaks
 sudo apt install -y gparted
 sudo apt install -y handbrake
 sudo apt install -y inkscape
-sudo apt install -y lastpass-cli
 sudo apt install -y latexmk
 sudo apt install -y lutris
 sudo apt install -y maven

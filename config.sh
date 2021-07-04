@@ -58,12 +58,9 @@ cp $(dirname $(readlink -f $0))/configs/PulseEffects-output/*.json ~/.config/Pul
 sudo cp $(dirname $(readlink -f $0))/cronjobs/daily/* /etc/cron.daily/
 
 # removes screen tearing when using nvidia's proprietary graphics drivers (requires reboot to take effect)
-sudo touch /etc/modprobe.d/nvidia-drm-nomodeset.conf
-sudo echo "options nvidia-drm modeset=1" >> /etc/modprobe.d/nvidia-drm-nomodeset.conf
-sudo update-initramfs -u
-
-# installs rust-lang
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+#sudo touch /etc/modprobe.d/nvidia-drm-nomodeset.conf
+#sudo echo "options nvidia-drm modeset=1" >> /etc/modprobe.d/nvidia-drm-nomodeset.conf
+#sudo update-initramfs -u
 
 # week starts at monday fix for cal
 echo "" >> ~/.zshrc
