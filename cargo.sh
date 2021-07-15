@@ -7,4 +7,4 @@ source $HOME/.cargo/env
 
 cargo install https
 cargo install tokei
-cargo install ytop
+cargo install bottom
