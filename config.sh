@@ -55,6 +55,7 @@ cp $(dirname $(readlink -f $0))/configs/PulseEffects-input/*.json ~/.config/Puls
 cp $(dirname $(readlink -f $0))/configs/PulseEffects-output/*.json ~/.config/PulseEffects/output/
 
 # sets up cronjobs
+mkdir ~/tmp
 sudo cp $(dirname $(readlink -f $0))/cronjobs/daily/* /etc/cron.daily/
 
 # removes screen tearing when using nvidia's proprietary graphics drivers (requires reboot to take effect)
@@ -66,6 +67,11 @@ sudo cp $(dirname $(readlink -f $0))/cronjobs/daily/* /etc/cron.daily/
 echo "" >> ~/.zshrc
 echo "# Fix for cal, so that week starts at Monday" >> ~/.zshrc
 echo "alias cal='ncal -Mb'" >> ~/.zshrc
+
+# install Montserrat Google Font
+wget -O Montserrat.zip https://fonts.google.com/download\?family\=Montserrat
+unzip Montserrat.zip -d Montserrat
+mv Montserrat /usr/share/fonts/truetype/
 
 # install now clocking conky widget
 git clone git@github.com:rayzr522/now-clocking.git

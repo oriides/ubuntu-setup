@@ -55,6 +55,7 @@ sudo apt install -y texlive-latex-extra
 sudo apt install -y texlive-extra-utils
 sudo apt install -y translate-shell
 sudo apt install -y units
+sudo apt install -y unzip
 sudo apt install -y vim
 sudo apt install -y vim-gtk
 sudo apt install -y vivaldi-stable
