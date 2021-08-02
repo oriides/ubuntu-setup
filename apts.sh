@@ -16,6 +16,7 @@ sudo apt update
 sudo apt install -y build-essential
 sudo apt install -y dconf-editor
 sudo apt install -y default-jdk
+sudo apt install -y conky
 sudo apt install -y evolution
 sudo apt install -y ffmpeg
 sudo apt install -y gimp
@@ -38,6 +39,7 @@ sudo apt install -y obs-studio
 sudo apt install -y ocs-url
 sudo apt install -y openvpn
 sudo apt install -y pavucontrol
+sudo apt install -y playerctl
 sudo apt install -y postgresql
 sudo apt install -y powerline
 sudo apt install -y pulseeffects

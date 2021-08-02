@@ -67,6 +67,13 @@ echo "" >> ~/.zshrc
 echo "# Fix for cal, so that week starts at Monday" >> ~/.zshrc
 echo "alias cal='ncal -Mb'" >> ~/.zshrc
 
+# install now clocking conky widget
+git clone git@github.com:rayzr522/now-clocking.git
+sudo mv now-clocking /opt/
+sudo /opt/now-clocking/scripts/download-fonts.sh
+echo "[Desktop Entry]\nTerminal=false\nType=Application\nName=Now Clocking\nExec=/opt/now-clocking/now-clocking" > ~/.local/share/applications/now-clocking.desktop
+ln -s ~/.local/share/applications/now-clocking.desktop ~/.config/autostart/now-clocking.desktop
+
 notify-send -i dialog-information "config Script" "Please reboot to apply all changes"
 
 clear
