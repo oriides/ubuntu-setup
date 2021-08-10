@@ -9,6 +9,10 @@ sudo add-apt-repository -y ppa:nextcloud-devs/client
 sudo add-apt-repository -y ppa:obsproject/obs-studio
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key FDC247B7
 echo 'deb https://repo.windscribe.com/ubuntu bionic main' | sudo tee /etc/apt/sources.list.d/windscribe-repo.list
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo apt-key add winehq.key
+
+sudo dpkg --add-architecture i386
 
 sudo apt update
 
@@ -58,6 +62,7 @@ sudo apt install -y vim
 sudo apt install -y vim-gtk
 sudo apt install -y vivaldi-stable
 sudo apt install -y windscribe-cli
+sudo apt install -y --install-recommends winehq-stable
 sudo apt install -y zsh
 
 sudo apt update
