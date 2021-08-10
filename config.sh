@@ -22,28 +22,34 @@ chsh -s /bin/zsh
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+# Powerlevel10k for oh-my-zsh
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+sed -i 's,ZSH_THEME=.*,ZSH_THEME="powerlevel10k/powerlevel10k",g' ~/.zshrc
+
+# OBSOLETE:
+
 # Powerline
-pip3 install powerline-status
+# pip3 install powerline-status
 
-wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
-wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
+# wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
+# wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
 
-mv PowerlineSymbols.otf /usr/share/fonts/
-fc-cache -vf /usr/share/fonts/
-mv 10-powerline-symbols.conf /etc/fonts/conf.d/
+# mv PowerlineSymbols.otf /usr/share/fonts/
+# fc-cache -vf /usr/share/fonts/
+# mv 10-powerline-symbols.conf /etc/fonts/conf.d/
 
 # sets up Powerline for bash
-echo "" >> ~/.bashrc
-echo "# Powerline" >> ~/.bashrc
-echo "powerline-daemon -q" >> ~/.bashrc
-echo "POWERLINE_BASH_CONTINUATION=1" >> ~/.bashrc
-echo "POWERLINE_BASH_SELECT=1" >> ~/.bashrc
-echo ". /usr/share/powerline/bindings/bash/powerline.sh" >> ~/.bashrc
+# echo "" >> ~/.bashrc
+# echo "# Powerline" >> ~/.bashrc
+# echo "powerline-daemon -q" >> ~/.bashrc
+# echo "POWERLINE_BASH_CONTINUATION=1" >> ~/.bashrc
+# echo "POWERLINE_BASH_SELECT=1" >> ~/.bashrc
+# echo ". /usr/share/powerline/bindings/bash/powerline.sh" >> ~/.bashrc
 
 # sets up Powerline for zsh
-echo "" >> ~/.zshrc
-echo "# Powerline" >> ~/.zshrc
-echo ". /usr/share/powerline/bindings/zsh/powerline.zsh" >> ~/.zshrc
+# echo "" >> ~/.zshrc
+# echo "# Powerline" >> ~/.zshrc
+# echo ". /usr/share/powerline/bindings/zsh/powerline.zsh" >> ~/.zshrc
 
 # sets up vim
 cp $(dirname $(readlink -f $0))/configs/.vimrc ~/
