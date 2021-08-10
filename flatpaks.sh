@@ -9,8 +9,10 @@ flatpak install -y com.bitwarden.desktop
 flatpak install -y org.blender.Blender
 flatpak install -y org.onlyoffice.desktopeditors
 flatpak install -y com.discordapp.Discord
+flatpak install -y com.github.tchx84.Flatseal
 flatpak install -y org.kde.krita
 flatpak install -y com.getpostman.Postman
+flatpak install -y com.spotify.Client
 flatpak install -y com.valvesoftware.SteamLink
 flatpak install -y com.github.taiko2k.tauonmb
 

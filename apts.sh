@@ -2,7 +2,6 @@
 
 sudo wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
 curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - 
-echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo add-apt-repository -y ppa:lutris-team/lutris
 sudo add-apt-repository -y 'deb https://repo.vivaldi.com/archive/deb/ stable main'
 sudo add-apt-repository -y ppa:mikhailnov/pulseeffects
@@ -46,7 +45,6 @@ sudo apt install -y pulseeffects
 sudo apt install -y python3-pip
 sudo apt install -y qemu-kvm
 sudo apt install -y scrcpy
-sudo apt install -y spotify-client
 sudo apt install -y stacer
 sudo apt install -y steam
 sudo apt install -y texlive
