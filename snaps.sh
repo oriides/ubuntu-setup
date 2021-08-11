@@ -8,5 +8,5 @@ sudo snap install node --classic --edge
 sudo snap refresh
 
 clear
-notify-send -i emblem-default "snaps Script" "Done\!"
-echo "Done\!"
+notify-send -i emblem-default "snaps Script" "Done!"
+echo "Done!"

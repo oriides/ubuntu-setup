@@ -89,5 +89,5 @@ ln -s ~/.local/share/applications/now-clocking.desktop ~/.config/autostart/now-c
 notify-send -i dialog-information "config Script" "Please reboot to apply all changes"
 
 clear
-notify-send -i emblem-default "config Script" "Done\!"
-echo "Done\!"
+notify-send -i emblem-default "config Script" "Done!"
+echo "Done!"

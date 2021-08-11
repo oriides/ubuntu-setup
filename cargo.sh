@@ -8,3 +8,7 @@ source $HOME/.cargo/env
 cargo install https
 cargo install tokei
 cargo install bottom
+
+clear
+notify-send -i emblem-default "cargo Script" "Done!"
+echo "Done!"

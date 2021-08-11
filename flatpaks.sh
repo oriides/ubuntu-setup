@@ -17,5 +17,5 @@ flatpak install -y com.valvesoftware.SteamLink
 flatpak install -y com.github.taiko2k.tauonmb
 
 clear
-notify-send -i emblem-default "flatpaks Script" "Done\!"
-echo "Done\!"
+notify-send -i emblem-default "flatpaks Script" "Done!"
+echo "Done!"

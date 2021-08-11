@@ -71,5 +71,5 @@ sudo apt upgrade
 notify-send -i dialog-information "apts Script" "The following packages require manual installation:\n> Veracrypt\n> Ulauncher\n> Whatsdesk\n> UxPlay"
 
 clear
-notify-send -i emblem-default "apts Script" "Done\!"
-echo "Done\!"
+notify-send -i emblem-default "apts Script" "Done!"
+echo "Done!"
