@@ -72,6 +72,10 @@ echo "" >> ~/.zshrc
 echo "# Fix for cal, so that week starts at Monday" >> ~/.zshrc
 echo "alias cal='ncal -Mb'" >> ~/.zshrc
 
+## install my custom icon theme
+git clone git@github.com:sovareign/WinOSX-dark.git
+sudo mv WinOSX-dark /usr/share/icons/
+
 # ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 # install fonts ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 

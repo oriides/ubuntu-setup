@@ -8,3 +8,5 @@ As a result of that `config.sh` should always be run last.
 The remaining scripts can be run in parallel.
 
 *NOTE: `flatpaks.sh` runs 2 apt commands and requires apt package lock. Consequently `flatpaks.sh` should be started before `apts.sh` if you don't want to wait for `apts.sh` to finish first*
+
+*NOTE: `config.sh` requires GitHub access through git by means of a functioning ssh key*
