@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # sudo snap install android-studio --classic
-sudo snap install code --classic
+sudo snap install code --classic # visual studio code
 # sudo snap install intellij-idea-ultimate --classic
-sudo snap install node --classic --edge
+sudo snap install node --classic --edge # nodejs
 
 sudo snap refresh
 

@@ -1,70 +1,86 @@
 #!/bin/bash
 
+# add various keys and 3rd party repos –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+## vivaldi
 sudo wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
-curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - 
-sudo add-apt-repository -y ppa:lutris-team/lutris
 sudo add-apt-repository -y 'deb https://repo.vivaldi.com/archive/deb/ stable main'
+## lutris
+sudo add-apt-repository -y ppa:lutris-team/lutris
+## nextcloud-client
 sudo add-apt-repository -y ppa:nextcloud-devs/client
+## obs-studio
 sudo add-apt-repository -y ppa:obsproject/obs-studio
+## windscribe-cli
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key FDC247B7
 echo 'deb https://repo.windscribe.com/ubuntu bionic main' | sudo tee /etc/apt/sources.list.d/windscribe-repo.list
 
+# ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
 sudo apt update
 
-sudo apt install -y build-essential
-sudo apt install -y baobab
-sudo apt install -y conky
-sudo apt install -y dconf-editor
-sudo apt install -y default-jdk
-sudo apt install -y evolution
-sudo apt install -y ffmpeg
-sudo apt install -y gimp
-sudo apt install -y git
-sudo apt install -y gnome-shell-extensions
-sudo apt install -y gnome-disk-utility
-sudo apt install -y gnome-terminal
-sudo apt install -y gnome-tweaks
-sudo apt install -y gparted
-sudo apt install -y handbrake
-sudo apt install -y inkscape
-sudo apt install -y latexmk
-sudo apt install -y lutris
-sudo apt install -y maven
-sudo apt install -y nautilus
-sudo apt install -y neofetch
-sudo apt install -y net-tools
-sudo apt install -y network-manager-openvpn
-sudo apt install -y network-manager-openvpn-gnome
-sudo apt install -y nextcloud-client
-sudo apt install -y obs-studio
-sudo apt install -y ocs-url
-sudo apt install -y openvpn
-sudo apt install -y pavucontrol
-sudo apt install -y playerctl
-sudo apt install -y powerline
-sudo apt install -y pulseeffects
-sudo apt install -y python3-pip
-sudo apt install -y qemu-kvm
-sudo apt install -y scrcpy
-sudo apt install -y seahorse
-sudo apt install -y stacer
-sudo apt install -y steam
-sudo apt install -y texlive
-sudo apt install -y texlive-lang-german
-sudo apt install -y texlive-latex-extra
-sudo apt install -y texlive-extra-utils
-sudo apt install -y translate-shell
-sudo apt install -y units
-sudo apt install -y unzip
-sudo apt install -y vim
-sudo apt install -y vim-gtk
-sudo apt install -y vivaldi-stable
-sudo apt install -y vlc
-sudo apt install -y windscribe-cli
-sudo apt install -y zsh
+# install packages –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+sudo apt install -y audacity # sound recording/ editing
+sudo apt install -y build-essential # required for rustc
+sudo apt install -y baobab # disk usage analyzer
+sudo apt install -y conky # widgets (required for now-clocking)
+sudo apt install -y dconf-editor # musthave
+sudo apt install -y default-jdk # java
+sudo apt install -y evolution # mail client
+sudo apt install -y ffmpeg # audio transcoder
+sudo apt install -y file-roller # musthave
+sudo apt install -y gimp # image editing
+sudo apt install -y git # musthave
+sudo apt install -y gnome-disk-utility # disks
+sudo apt install -y gnome-terminal # terminal
+sudo apt install -y gparted # advanced disk partitioning tool
+sudo apt install -y handbrake # video transcoder
+sudo apt install -y inkscape # svg image editor
+sudo apt install -y kdeconnect # connection to phone
+sudo apt install -y latexmk # LATEX
+sudo apt install -y lutris # games
+sudo apt install -y maven # java
+sudo apt install -y nautilus # file explorer
+sudo apt install -y nautilus-nextcloud # nextcloud extension for file explorer
+sudo apt install -y nautilus-kdeconnect # kdeconnect extension for file explorer
+sudo apt install -y neofetch # musthave
+sudo apt install -y net-tools # deprecated but still useful
+sudo apt install -y network-manager-openvpn # openvpn support in network manager
+sudo apt install -y network-manager-openvpn-gnome # openvpn support in network manager gui
+sudo apt install -y nextcloud-client # nextcloud
+sudo apt install -y obs-studio # OBS
+sudo apt install -y openvpn # openvpn
+sudo apt install -y pavucontrol # musthave
+sudo apt install -y playerctl # required for raven/ now-clocking
+sudo apt install -y powerline # powerline (for vi)
+sudo apt install -y pulseeffects # musthave
+sudo apt install -y python3-pip # pip3
+sudo apt install -y qemu-kvm # kernel based virtual machines
+sudo apt install -y scrcpy # screencopying for android
+sudo apt install -y seahorse # ssh/gpg key manager
+sudo apt install -y stacer # system monitor
+sudo apt install -y steam # steam # TODO: replace with 1st party deb package
+sudo apt install -y texlive # LATEX
+sudo apt install -y texlive-lang-german # LATEX
+sudo apt install -y texlive-latex-extra # LATEX
+sudo apt install -y texlive-extra-utils # LATEX
+sudo apt install -y translate-shell # cli translator (for Ulauncher)
+sudo apt install -y units # cli unit converter (for Ulauncher)
+sudo apt install -y unzip # musthave
+sudo apt install -y vim # vi improved
+sudo apt install -y vim-gtk # clipboard access for vi
+sudo apt install -y vivaldi-stable # browser
+sudo apt install -y vlc # media player
+sudo apt install -y windscribe-cli # vpn
+sudo apt install -y zsh # musthave
+
+# ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 sudo apt update
 sudo apt upgrade -y
+
+# ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 notify-send -i dialog-information "apts Script" "The following packages require manual installation:\n> Veracrypt\n> Ulauncher\n> Whatsdesk\n> UxPlay"
 
