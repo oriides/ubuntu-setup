@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Google Slides
+Exec=vivaldi https://docs.google.com/presentation/u/0/
+Icon=/home/nikolai/Pictures/Downloads/Google_Slides.max-2800x2800.png

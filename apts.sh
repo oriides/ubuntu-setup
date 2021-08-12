@@ -30,7 +30,6 @@ sudo apt install -y inkscape
 sudo apt install -y latexmk
 sudo apt install -y lutris
 sudo apt install -y maven
-sudo apt install -y mongodb
 sudo apt install -y nautilus
 sudo apt install -y neofetch
 sudo apt install -y net-tools
@@ -42,7 +41,6 @@ sudo apt install -y ocs-url
 sudo apt install -y openvpn
 sudo apt install -y pavucontrol
 sudo apt install -y playerctl
-sudo apt install -y postgresql
 sudo apt install -y powerline
 sudo apt install -y pulseeffects
 sudo apt install -y python3-pip
