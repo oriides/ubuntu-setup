@@ -28,6 +28,7 @@ sudo apt install -y conky # widgets (required for now-clocking)
 sudo apt install -y dconf-editor # musthave
 sudo apt install -y default-jdk # java
 sudo apt install -y evolution # mail client
+sudo apt install -y evince # document viewer
 sudo apt install -y ffmpeg # audio transcoder
 sudo apt install -y file-roller # musthave
 sudo apt install -y gimp # image editing
