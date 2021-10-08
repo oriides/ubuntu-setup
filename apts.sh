@@ -57,6 +57,7 @@ sudo apt install -y playerctl # required for raven/ now-clocking
 sudo apt install -y powerline # powerline (for vi)
 sudo apt install -y pulseeffects # musthave
 sudo apt install -y python3-pip # pip3
+sudo apt install -y qemu # kernel based virtual machines
 sudo apt install -y qemu-kvm # kernel based virtual machines
 sudo apt install -y scrcpy # screencopying for android
 sudo apt install -y seahorse # ssh/gpg key manager
@@ -71,6 +72,7 @@ sudo apt install -y units # cli unit converter (for Ulauncher)
 sudo apt install -y unzip # musthave
 sudo apt install -y vim # vi improved
 sudo apt install -y vim-gtk # clipboard access for vi
+sudo apt install -y virt-manager # Virtual Machine Manager
 sudo apt install -y vivaldi-stable # browser
 sudo apt install -y vlc # media player
 sudo apt install -y windscribe-cli # vpn
