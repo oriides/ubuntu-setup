@@ -3,6 +3,7 @@
 # create home tmp folder
 mkdir ~/tmp
 
+# ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 # configure git ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 ## git user.name
@@ -22,19 +23,6 @@ git config --global user.name $NAME
 git config --global user.email $EMAIL
 
 # ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-# configure zsh ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-
-## set zsh as default shell
-chsh -s /bin/zsh
-
-## install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-## Powerlevel10k for oh-my-zsh
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-sed -i 's,ZSH_THEME=.*,ZSH_THEME="powerlevel10k/powerlevel10k",g' ~/.zshrc
-
-# ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 # set up various configurations ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 ## sets up vim
@@ -49,12 +37,13 @@ cp $(dirname $(readlink -f $0))/configs/PulseEffects-output/*.json ~/.config/Pul
 ## sets up cronjobs
 sudo cp $(dirname $(readlink -f $0))/cronjobs/daily/* /etc/cron.daily/
 
+# OBSOLETE
 ## install now clocking conky widget
-git clone git@github.com:rayzr522/now-clocking.git
-sudo mv now-clocking /opt/
-sudo /opt/now-clocking/scripts/download-fonts.sh
-sudo cp /opt/now-clocking/start.sh /opt/now-clocking/now-clocking
-sudo chmod +x /opt/now-clocking/now-clocking
+# git clone git@github.com:rayzr522/now-clocking.git
+# sudo mv now-clocking /opt/
+# sudo /opt/now-clocking/scripts/download-fonts.sh
+# sudo cp /opt/now-clocking/start.sh /opt/now-clocking/now-clocking
+# sudo chmod +x /opt/now-clocking/now-clocking
 
 ## install .desktop files
 cp $(dirname $(readlink -f $0))/configs/desktop-files/* ~/.local/share/applications
@@ -68,9 +57,9 @@ sudo echo "options nvidia-drm modeset=1" >> /etc/modprobe.d/nvidia-drm-nomodeset
 sudo update-initramfs -u
 
 ## week starts at monday fix for cal
-echo "" >> ~/.zshrc
-echo "# Fix for cal, so that week starts at Monday" >> ~/.zshrc
-echo "alias cal='ncal -Mb'" >> ~/.zshrc
+echo "" >> ~/.config/fish/config.fish
+echo "# Fix for cal, so that week starts at Monday" >> ~/.config/fish/config.fish
+echo "alias cal='ncal -Mb'" >> ~/.config/fish/config.fish
 
 ## install my custom icon theme
 git clone git@github.com:sovareign/WinOSX-dark.git
@@ -102,6 +91,21 @@ wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20B
 sudo chown -R root:root MesloLGS-NF
 sudo mv MesloLGS-NF /usr/share/fonts/truetype/
 fc-cache -vf
+
+# ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+# configure fish ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+## set fish as default shell
+chsh -s /usr/bin/fish
+
+## install fisher
+fish "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
+
+## install tide powerline prompt
+fish "fisher install ilancosman/tide"
+
+## install fzf for backwards search
+fish "fisher install jethrokuan/fzf"
 
 # ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
