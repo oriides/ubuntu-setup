@@ -49,23 +49,6 @@ sudo cp $(dirname $(readlink -f $0))/cronjobs/daily/* /etc/cron.daily/
 cp $(dirname $(readlink -f $0))/configs/desktop-files/* ~/.local/share/applications
 
 # ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-# usability fixes ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-
-## removes screen tearing when using nvidia's proprietary graphics drivers (requires reboot to take effect)
-sudo touch /etc/modprobe.d/nvidia-drm-nomodeset.conf
-sudo echo "options nvidia-drm modeset=1" >> /etc/modprobe.d/nvidia-drm-nomodeset.conf
-sudo update-initramfs -u
-
-## week starts at monday fix for cal
-echo "" >> ~/.config/fish/config.fish
-echo "# Fix for cal, so that week starts at Monday" >> ~/.config/fish/config.fish
-echo "alias cal='ncal -Mb'" >> ~/.config/fish/config.fish
-
-## install my custom icon theme
-git clone git@github.com:sovareign/WinOSX-dark.git
-sudo mv WinOSX-dark /usr/share/icons/
-
-# ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 # install fonts ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 ## Montserrat
@@ -95,9 +78,6 @@ fc-cache -vf
 # ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 # configure fish ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
-## set fish as default shell
-chsh -s /usr/bin/fish
-
 ## install fisher
 fish "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
 
@@ -108,6 +88,44 @@ fish "fisher install ilancosman/tide"
 fish "fisher install jethrokuan/fzf"
 
 # ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+# configure zsh ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+## install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+## Powerlevel10k for oh-my-zsh
+zsh "git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
+
+## zsh autosuggestions
+zsh "git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
+
+## modify .zshrc to enable theme and plugins
+sed -i 's,ZSH_THEME=.*,ZSH_THEME="powerlevel10k/powerlevel10k",g' ~/.zshrc
+sed -i 's,plugins=(git),plugins=(git zsh-autosuggestions),g' ~/.zshrc
+
+# ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+# usability fixes ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+## removes screen tearing when using nvidia's proprietary graphics drivers (requires reboot to take effect)
+sudo touch /etc/modprobe.d/nvidia-drm-nomodeset.conf
+sudo echo "options nvidia-drm modeset=1" >> /etc/modprobe.d/nvidia-drm-nomodeset.conf
+sudo update-initramfs -u
+
+## week starts at monday fix for cal
+echo "" >> ~/.config/fish/config.fish
+echo "# Fix for cal, so that week starts at Monday" >> ~/.config/fish/config.fish
+echo "alias cal='ncal -Mb'" >> ~/.config/fish/config.fish
+
+echo "" >> ~/.zshrc
+echo "# Fix for cal, so that week starts at Monday" >> ~/.zshrc
+echo "alias cal='ncal -Mb'" >> ~/.zshrc
+
+## install my custom icon theme
+git clone git@github.com:sovareign/WinOSX-dark.git
+sudo mv WinOSX-dark /usr/share/icons/
+
+# ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
 
 notify-send -i dialog-information "config Script" "Please reboot to apply all changes"
 
