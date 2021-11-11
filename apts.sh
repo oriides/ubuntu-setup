@@ -64,7 +64,6 @@ sudo apt install -y pulseeffects # musthave
 sudo apt install -y python3-pip # pip3
 sudo apt install -y qemu # kernel based virtual machines
 sudo apt install -y qemu-kvm # kernel based virtual machines
-sudo apt install -y scrcpy # screencopying for android
 sudo apt install -y seahorse # ssh/gpg key manager
 sudo apt install -y stacer # system monitor
 sudo apt install -y steam # steam # TODO: replace with 1st party deb package
