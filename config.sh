@@ -126,8 +126,12 @@ sudo mv WinOSX-dark /usr/share/icons/
 
 # ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
+## Place todo File in Home directory
+mv $(dirname $(readlink -f $0))/todos.txt ~/
 
-notify-send -i dialog-information "config Script" "Please reboot to apply all changes"
+# ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+notify-send -i dialog-information "config Script" "Please reboot to apply all changes and consult the todo file in your Home Directory"
 
 clear
 notify-send -i emblem-default "config Script" "Done!"

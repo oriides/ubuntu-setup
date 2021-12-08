@@ -16,6 +16,7 @@ flatpak install -y org.onlyoffice.desktopeditors # office suite
 flatpak install -y com.discordapp.Discord # voice chat
 flatpak install -y com.github.tchx84.Flatseal # flatpak configuration program
 flatpak install -y org.kde.krita # image editor/ painting software
+flatpak install -y com.obsproject.Studio # OBS
 flatpak install -y com.spotify.Client # spotify
 flatpak install -y com.valvesoftware.SteamLink # steam-link
 flatpak install -y com.github.taiko2k.tauonmb # music player

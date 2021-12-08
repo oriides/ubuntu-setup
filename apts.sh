@@ -11,8 +11,6 @@ sudo add-apt-repository -y ppa:lutris-team/lutris
 sudo apt-add-repository ppa:fish-shell/release-3
 ## nextcloud-client
 sudo add-apt-repository -y ppa:nextcloud-devs/client
-## obs-studio
-sudo add-apt-repository -y ppa:obsproject/obs-studio
 ## windscribe-cli
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key FDC247B7
 echo 'deb https://repo.windscribe.com/ubuntu bionic main' | sudo tee /etc/apt/sources.list.d/windscribe-repo.list
@@ -55,7 +53,6 @@ sudo apt install -y net-tools # deprecated but still useful
 sudo apt install -y network-manager-openvpn # openvpn support in network manager
 sudo apt install -y network-manager-openvpn-gnome # openvpn support in network manager gui
 sudo apt install -y nextcloud-client # nextcloud
-sudo apt install -y obs-studio # OBS
 sudo apt install -y openvpn # openvpn
 sudo apt install -y pavucontrol # musthave
 sudo apt install -y playerctl # required for raven/ now-clocking
@@ -66,7 +63,7 @@ sudo apt install -y qemu # kernel based virtual machines
 sudo apt install -y qemu-kvm # kernel based virtual machines
 sudo apt install -y seahorse # ssh/gpg key manager
 sudo apt install -y stacer # system monitor
-sudo apt install -y steam # steam # TODO: replace with 1st party deb package
+sudo apt install -y steam # steam
 sudo apt install -y texlive # LATEX
 sudo apt install -y texlive-lang-german # LATEX
 sudo apt install -y texlive-latex-extra # LATEX
@@ -88,8 +85,6 @@ sudo apt update
 sudo apt upgrade -y
 
 # ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-
-notify-send -i dialog-information "apts Script" "The following packages require manual installation:\n> Veracrypt\n> Ulauncher\n> Whatsdesk\n> UxPlay"
 
 clear
 notify-send -i emblem-default "apts Script" "Done!"
