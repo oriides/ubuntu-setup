@@ -101,7 +101,7 @@ zsh "git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/
 
 ## modify .zshrc to enable theme and plugins
 sed -i 's,ZSH_THEME=.*,ZSH_THEME="powerlevel10k/powerlevel10k",g' ~/.zshrc
-sed -i 's,plugins=(git),plugins=(git zsh-autosuggestions),g' ~/.zshrc
+sed -i 's,plugins=(git),plugins=(git docker docker-compose zsh-autosuggestions),g' ~/.zshrc
 
 # ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 # usability fixes ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
