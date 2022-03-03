@@ -38,7 +38,6 @@ sudo apt install -y git # musthave
 sudo apt install -y gnome-disk-utility # disks
 sudo apt install -y gnome-terminal # terminal
 sudo apt install -y gparted # advanced disk partitioning tool
-sudo apt install -y handbrake # video transcoder
 sudo apt install -y inkscape # svg image editor
 sudo apt install -y kdeconnect # connection to phone
 sudo apt install -y latexmk # LATEX

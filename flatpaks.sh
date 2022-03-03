@@ -20,6 +20,7 @@ flatpak install -y com.obsproject.Studio # OBS
 flatpak install -y com.spotify.Client # spotify
 flatpak install -y com.valvesoftware.SteamLink # steam-link
 flatpak install -y com.github.taiko2k.tauonmb # music player
+flatpak install -y fr.handbrake.ghb # video transcoder
 
 # ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
