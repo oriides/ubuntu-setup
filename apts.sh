@@ -7,8 +7,6 @@ sudo wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt
 sudo add-apt-repository -y 'deb https://repo.vivaldi.com/archive/deb/ stable main'
 ## lutris
 sudo add-apt-repository -y ppa:lutris-team/lutris
-## official fish 3.x PPA
-sudo apt-add-repository ppa:fish-shell/release-3
 ## nextcloud-client
 sudo add-apt-repository -y ppa:nextcloud-devs/client
 ## windscribe-cli
@@ -24,15 +22,12 @@ sudo apt update
 sudo apt install -y audacity # sound recording/ editing
 sudo apt install -y build-essential # required for rustc
 sudo apt install -y baobab # disk usage analyzer
-sudo apt install -y conky # widgets (required for now-clocking)
 sudo apt install -y dconf-editor # musthave
 sudo apt install -y default-jdk # java
 sudo apt install -y evolution # mail client
 sudo apt install -y evince # document viewer
 sudo apt install -y ffmpeg # audio transcoder
 sudo apt install -y file-roller # musthave
-sudo apt install -y fish # musthave
-sudo apt install -y fzf # cli fuzzy finder (for fish)
 sudo apt install -y gimp # image editing
 sudo apt install -y git # musthave
 sudo apt install -y gnome-disk-utility # disks
@@ -54,7 +49,6 @@ sudo apt install -y network-manager-openvpn-gnome # openvpn support in network m
 sudo apt install -y nextcloud-client # nextcloud
 sudo apt install -y openvpn # openvpn
 sudo apt install -y pavucontrol # musthave
-sudo apt install -y playerctl # required for raven/ now-clocking
 sudo apt install -y powerline # powerline (for vi)
 sudo apt install -y pulseeffects # musthave
 sudo apt install -y python3-pip # pip3
