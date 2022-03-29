@@ -34,13 +34,13 @@ sudo apt install -y gnome-disk-utility # disks
 sudo apt install -y gnome-terminal # terminal
 sudo apt install -y gparted # advanced disk partitioning tool
 sudo apt install -y inkscape # svg image editor
-sudo apt install -y kdeconnect # connection to phone
+# sudo apt install -y kdeconnect # connection to phone
 sudo apt install -y latexmk # LATEX
 sudo apt install -y lutris # games
 sudo apt install -y maven # java
 sudo apt install -y nautilus # file explorer
 sudo apt install -y nautilus-nextcloud # nextcloud extension for file explorer
-sudo apt install -y nautilus-kdeconnect # kdeconnect extension for file explorer
+# sudo apt install -y nautilus-kdeconnect # kdeconnect extension for file explorer
 sudo apt install -y ncal # cli calendar
 sudo apt install -y neofetch # musthave
 sudo apt install -y net-tools # deprecated but still useful
