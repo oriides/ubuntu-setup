@@ -115,7 +115,7 @@ sudo mv WinOSX-dark /usr/share/icons/
 # configure evolution ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 ## set labels
-gsettings set org.gnome.evolution.mail labels "['I_mportant:#EF2929', '_Work:#F57900', '_Personal:#4E9A06', '_To Do:#3465A4', '_Later:#75507B', 'via Amazon:#b767abaf6e68|amazon', 'via Saturn:#e35c95461ca4|via_saturn', 'via Zalando:#ffffab420000|via_zalando', 'via Twitch:#84131a1ada51|via_twitch', 'via IONOS:#2d5d6a4bd1a8|via_ionos', 'via 7digital:#1f43c7dae4ce|via_7digital', 'via Archive.org:#8f918f918f91|via_archive.org', 'via dbrand:#ffffdca60000|via_dbrand', 'via Discord:#57a57068ca27|via_discord', 'via EA:#e1d4195f4759|via_ea', 'via MediaMarkt:#eb5d278f278f|via_mediamarkt', 'via Parsec:#dc173e785b15|via_parsec', 'via TeamSpeak:#31e960c0a00e|via_teamspeak']"
+gsettings set org.gnome.evolution.mail labels "['I_mportant:#EF2929', '_Work:#F57900', '_Personal:#4E9A06', '_To Do:#3465A4', '_Later:#75507B', 'via Amazon:#6666AA|amazon', 'via Saturn:#6666AA|via_saturn', 'via Zalando:#6666AA|via_zalando', 'via Twitch:#6666AA|via_twitch', 'via IONOS:#6666AA|via_ionos', 'via 7digital:#6666AA|via_7digital', 'via Archive.org:#6666AA|via_archive.org', 'via dbrand:#6666AA|via_dbrand', 'via Discord:#6666AA|via_discord', 'via EA:#6666AA|via_ea', 'via MediaMarkt:#6666AA|via_mediamarkt', 'via Parsec:#6666AA|via_parsec', 'via TeamSpeak:#6666AA|via_teamspeak', 'via Steam:#6666AA|via_steam', 'via Bahn:#6666AA|via_bahn', 'via WB:#6666AA|via_wb', 'via Blizzard:#6666AA|via_blizzard']"
 
 ## set mail filters
 
