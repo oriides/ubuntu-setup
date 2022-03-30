@@ -1,0 +1,341 @@
+<?xml version="1.0"?>
+<filteroptions>
+    <ruleset>
+        <rule enabled="true" grouping="all" source="incoming">
+            <title>7digital</title>
+            <partset>
+                <part name="to">
+                    <value name="recipient-type" type="option" value="contains" />
+                    <value name="recipient" type="address" allow-empty="false">
+                        <address>REDACTED+7d@gmail.com</address>
+                    </value>
+                </part>
+            </partset>
+            <actionset>
+                <part name="label">
+                    <value name="label" type="option" value="via_7digital" />
+                </part>
+            </actionset>
+        </rule>
+        <rule enabled="true" grouping="all" source="incoming">
+            <title>Amazon</title>
+            <partset>
+                <part name="to">
+                    <value name="recipient-type" type="option" value="contains" />
+                    <value name="recipient" type="address" allow-empty="false">
+                        <address>REDACTED+amazon@gmail.com</address>
+                    </value>
+                </part>
+            </partset>
+            <actionset>
+                <part name="label">
+                    <value name="label" type="option" value="amazon" />
+                </part>
+            </actionset>
+        </rule>
+        <rule enabled="true" grouping="all" source="incoming">
+            <title>Archive.org</title>
+            <partset>
+                <part name="to">
+                    <value name="recipient-type" type="option" value="contains" />
+                    <value name="recipient" type="address" allow-empty="false">
+                        <address>REDACTED+archive@gmail.com</address>
+                    </value>
+                </part>
+            </partset>
+            <actionset>
+                <part name="label">
+                    <value name="label" type="option" value="via_archive.org" />
+                </part>
+            </actionset>
+        </rule>
+        <rule enabled="true" grouping="all" source="incoming">
+            <title>Bahn</title>
+            <partset>
+                <part name="to">
+                    <value name="recipient-type" type="option" value="contains" />
+                    <value name="recipient" type="address" allow-empty="false">
+                        <address>REDACTED+bahn@gmail.com</address>
+                    </value>
+                </part>
+            </partset>
+            <actionset>
+                <part name="label">
+                    <value name="label" type="option" value="via_bahn" />
+                </part>
+            </actionset>
+        </rule>
+        <rule enabled="true" grouping="all" source="incoming">
+            <title>Blizzard</title>
+            <partset>
+                <part name="to">
+                    <value name="recipient-type" type="option" value="contains" />
+                    <value name="recipient" type="address" allow-empty="false">
+                        <address>REDACTED+blizzard@gmail.com</address>
+                    </value>
+                </part>
+            </partset>
+            <actionset>
+                <part name="label">
+                    <value name="label" type="option" value="via_blizzard" />
+                </part>
+            </actionset>
+        </rule>
+        <rule enabled="true" grouping="all" source="incoming">
+            <title>dbrand</title>
+            <partset>
+                <part name="sender">
+                    <value name="sender-type" type="option" value="contains" />
+                    <value name="sender" type="string" allow-empty="false">
+                        <string>REDACTED+dbrand@gmail.com</string>
+                    </value>
+                </part>
+            </partset>
+            <actionset>
+                <part name="label">
+                    <value name="label" type="option" value="via_dbrand" />
+                </part>
+            </actionset>
+        </rule>
+        <rule enabled="true" grouping="all" source="incoming">
+            <title>Discord</title>
+            <partset>
+                <part name="to">
+                    <value name="recipient-type" type="option" value="contains" />
+                    <value name="recipient" type="address" allow-empty="false">
+                        <address>REDACTED+discord@gmail.com</address>
+                    </value>
+                </part>
+            </partset>
+            <actionset>
+                <part name="label">
+                    <value name="label" type="option" value="via_discord" />
+                </part>
+            </actionset>
+        </rule>
+        <rule enabled="true" grouping="all" source="incoming">
+            <title>EA</title>
+            <partset>
+                <part name="to">
+                    <value name="recipient-type" type="option" value="contains" />
+                    <value name="recipient" type="address" allow-empty="false">
+                        <address>REDACTED+ea@gmail.com</address>
+                    </value>
+                </part>
+            </partset>
+            <actionset>
+                <part name="label">
+                    <value name="label" type="option" value="via_ea" />
+                </part>
+            </actionset>
+        </rule>
+        <rule enabled="true" grouping="all" source="incoming">
+            <title>Epic Games</title>
+            <partset>
+                <part name="to">
+                    <value name="recipient-type" type="option" value="contains" />
+                    <value name="recipient" type="address" allow-empty="false">
+                        <address>REDACTED+epic@gmail.com</address>
+                    </value>
+                </part>
+            </partset>
+            <actionset>
+                <part name="label">
+                    <value name="label" type="option" value="via_epic" />
+                </part>
+            </actionset>
+        </rule>
+        <rule enabled="true" grouping="all" source="incoming">
+            <title>HumbleBundle</title>
+            <partset>
+                <part name="to">
+                    <value name="recipient-type" type="option" value="contains" />
+                    <value name="recipient" type="address" allow-empty="false">
+                        <address>REDACTED+humble@gmail.com</address>
+                    </value>
+                </part>
+            </partset>
+            <actionset>
+                <part name="label">
+                    <value name="label" type="option" value="via_humble" />
+                </part>
+            </actionset>
+        </rule>
+        <rule enabled="true" grouping="all" source="incoming">
+            <title>IONOS</title>
+            <partset>
+                <part name="to">
+                    <value name="recipient-type" type="option" value="contains" />
+                    <value name="recipient" type="address" allow-empty="false">
+                        <address>REDACTED+ionos@gmail.com</address>
+                    </value>
+                </part>
+            </partset>
+            <actionset>
+                <part name="label">
+                    <value name="label" type="option" value="via_ionos" />
+                </part>
+            </actionset>
+        </rule>
+        <rule enabled="true" grouping="all" source="incoming">
+            <title>MediaMarkt</title>
+            <partset>
+                <part name="to">
+                    <value name="recipient-type" type="option" value="contains" />
+                    <value name="recipient" type="address" allow-empty="false">
+                        <address>REDACTED+mediamarkt@gmail.com</address>
+                    </value>
+                </part>
+            </partset>
+            <actionset>
+                <part name="label">
+                    <value name="label" type="option" value="via_mediamarkt" />
+                </part>
+            </actionset>
+        </rule>
+        <rule enabled="true" grouping="all" source="incoming">
+            <title>Parsec</title>
+            <partset>
+                <part name="to">
+                    <value name="recipient-type" type="option" value="contains" />
+                    <value name="recipient" type="address" allow-empty="false">
+                        <address>REDACTED+parsec@gmail.com</address>
+                    </value>
+                </part>
+            </partset>
+            <actionset>
+                <part name="label">
+                    <value name="label" type="option" value="via_parsec" />
+                </part>
+            </actionset>
+        </rule>
+        <rule enabled="true" grouping="all" source="incoming">
+            <title>Rockstar Games</title>
+            <partset>
+                <part name="to">
+                    <value name="recipient-type" type="option" value="contains" />
+                    <value name="recipient" type="address" allow-empty="false">
+                        <address>REDACTED+rockstar@gmail.com</address>
+                    </value>
+                </part>
+            </partset>
+            <actionset>
+                <part name="label">
+                    <value name="label" type="option" value="via_rockstar" />
+                </part>
+            </actionset>
+        </rule>
+        <rule enabled="true" grouping="all" source="incoming">
+            <title>Saturn</title>
+            <partset>
+                <part name="to">
+                    <value name="recipient-type" type="option" value="contains" />
+                    <value name="recipient" type="address" allow-empty="false">
+                        <address>REDACTED+saturn@gmail.com</address>
+                    </value>
+                </part>
+            </partset>
+            <actionset>
+                <part name="label">
+                    <value name="label" type="option" value="via_saturn" />
+                </part>
+            </actionset>
+        </rule>
+        <rule enabled="true" grouping="all" source="incoming">
+            <title>Steam</title>
+            <partset>
+                <part name="to">
+                    <value name="recipient-type" type="option" value="contains" />
+                    <value name="recipient" type="address" allow-empty="false">
+                        <address>REDACTED+steam@gmail.com</address>
+                    </value>
+                </part>
+            </partset>
+            <actionset>
+                <part name="label">
+                    <value name="label" type="option" value="via_steam" />
+                </part>
+            </actionset>
+        </rule>
+        <rule enabled="true" grouping="all" source="incoming">
+            <title>TeamSpeak</title>
+            <partset>
+                <part name="to">
+                    <value name="recipient-type" type="option" value="contains" />
+                    <value name="recipient" type="address" allow-empty="false">
+                        <address>REDACTED+teamspeak@gmail.com</address>
+                    </value>
+                </part>
+            </partset>
+            <actionset>
+                <part name="label">
+                    <value name="label" type="option" value="via_teamspeak" />
+                </part>
+            </actionset>
+        </rule>
+        <rule enabled="true" grouping="all" source="incoming">
+            <title>Twitch</title>
+            <partset>
+                <part name="to">
+                    <value name="recipient-type" type="option" value="contains" />
+                    <value name="recipient" type="address" allow-empty="false">
+                        <address>REDACTED+twitch@gmail.com</address>
+                    </value>
+                </part>
+            </partset>
+            <actionset>
+                <part name="label">
+                    <value name="label" type="option" value="via_twitch" />
+                </part>
+            </actionset>
+        </rule>
+        <rule enabled="true" grouping="all" source="incoming">
+            <title>Warner Bros</title>
+            <partset>
+                <part name="to">
+                    <value name="recipient-type" type="option" value="contains" />
+                    <value name="recipient" type="address" allow-empty="false">
+                        <address>REDACTED+wb@gmail.com</address>
+                    </value>
+                </part>
+            </partset>
+            <actionset>
+                <part name="label">
+                    <value name="label" type="option" value="via_wb" />
+                </part>
+            </actionset>
+        </rule>
+        <rule enabled="true" grouping="all" source="incoming">
+            <title>Zalando</title>
+            <partset>
+                <part name="to">
+                    <value name="recipient-type" type="option" value="contains" />
+                    <value name="recipient" type="address" allow-empty="false">
+                        <address>REDACTED+zalando@gmail.com</address>
+                    </value>
+                </part>
+            </partset>
+            <actionset>
+                <part name="label">
+                    <value name="label" type="option" value="via_zalando" />
+                </part>
+            </actionset>
+        </rule>
+        <rule enabled="true" grouping="all" source="incoming">
+            <title>itch.io</title>
+            <partset>
+                <part name="to">
+                    <value name="recipient-type" type="option" value="contains" />
+                    <value name="recipient" type="address" allow-empty="false">
+                        <address>REDACTED+itch@gmail.com</address>
+                    </value>
+                </part>
+            </partset>
+            <actionset>
+                <part name="label">
+                    <value name="label" type="option" value="via_itch.io" />
+                </part>
+            </actionset>
+        </rule>
+    </ruleset>
+</filteroptions>
