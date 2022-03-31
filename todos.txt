@@ -1,8 +1,0 @@
-The Following Packages need to be manually installed:
-
-- Ulauncher
-- Veracrypt
-- Whatsdesk
-- UxPlay
-
-Please manually install desired OBS Plugins through the Gnome Software Application or via Flatpak commands 

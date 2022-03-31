@@ -37,14 +37,6 @@ cp $(dirname $(readlink -f $0))/configs/PulseEffects-output/*.json ~/.config/Pul
 ## sets up cronjobs
 sudo cp $(dirname $(readlink -f $0))/cronjobs/daily/* /etc/cron.daily/
 
-# OBSOLETE
-## install now clocking conky widget
-# git clone git@github.com:rayzr522/now-clocking.git
-# sudo mv now-clocking /opt/
-# sudo /opt/now-clocking/scripts/download-fonts.sh
-# sudo cp /opt/now-clocking/start.sh /opt/now-clocking/now-clocking
-# sudo chmod +x /opt/now-clocking/now-clocking
-
 ## install .desktop files
 cp $(dirname $(readlink -f $0))/configs/desktop-files/* ~/.local/share/applications
 
@@ -94,10 +86,11 @@ sed -i 's,plugins=(git),plugins=(git docker docker-compose zsh-autosuggestions),
 # ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 # usability fixes ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
-## removes screen tearing when using nvidia's proprietary graphics drivers (requires reboot to take effect)
-sudo touch /etc/modprobe.d/nvidia-drm-nomodeset.conf
-sudo echo "options nvidia-drm modeset=1" >> /etc/modprobe.d/nvidia-drm-nomodeset.conf
-sudo update-initramfs -u
+# OBSOLETE
+# ## removes screen tearing when using nvidia's proprietary graphics drivers (requires reboot to take effect)
+# sudo touch /etc/modprobe.d/nvidia-drm-nomodeset.conf
+# sudo echo "options nvidia-drm modeset=1" >> /etc/modprobe.d/nvidia-drm-nomodeset.conf
+# sudo update-initramfs -u
 
 ## week starts at monday fix for cal
 echo "" >> ~/.config/fish/config.fish
@@ -130,7 +123,7 @@ cp $(dirname $(readlink -f $0))/configs/filters.xml ~/.config/evolution/mail/fil
 # ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 ## Place todo File in Home directory
-mv $(dirname $(readlink -f $0))/todos.txt ~/
+mv $(dirname $(readlink -f $0))/todos.md ~/
 
 # ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
